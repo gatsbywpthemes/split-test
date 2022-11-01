@@ -25,7 +25,7 @@ jobs:
             deploy_key: "INPUT_DEPLOY_KEY"
             target_branch: "main"
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - if: "!startsWith(github.ref, 'refs/tags/')"
         name: "Update package repository"
         uses: alphpaca/monoplus-split-action@2022.1-alpha3
